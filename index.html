@@ -4,105 +4,130 @@
     <title>Semester Average Calculator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
-    body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5; /* light grey */
-}
-.container {
-    max-width: 600px;
-    padding: 16px;
-    background-color: #fff; /* white */
-    margin: 0 auto;
-    margin-top: 50px;
-    border-radius: 8px;
-    border: 1px solid #ddd; /* light grey */
-}
-h2 {
-    color: #007bff; /* blue */
-}
-label {
-    color: #333; /* dark grey */
-}
-input[type="number"] {
-    width: 100%;
-    margin-bottom: 10px;
-}
-button {
-    background-color: #007bff; /* blue */
-    color: #fff; /* white */
-    border-radius: 4px;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #0056b3; /* darker blue */
-}
-
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333; /* dark grey */
+            color: #fff; /* white text */
+        }
+        .container {
+            max-width: 600px;
+            padding: 16px;
+            background-color: #007bff; /* blue */
+            margin: 0 auto;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+        h2 {
+            color: #fff; /* white */
+        }
+        label {
+            color: #fff; /* white */
+            font-size: 1.2em; /* larger text */
+        }
+        input[type="number"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #333; /* dark grey */
+            color: #fff; /* white */
+            border-radius: 4px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555; /* lighter grey */
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        
+        <h2>Semester Average Calculator</h2>
+
+        <!-- Archi02 -->
         <div class="row">
-            <div class="col-sm">
-                <h2>Semester Average Calculator</h2>        
-                       <!-- Archi02 -->
-        <label for="Archi02">Archi02:</label><br>
-        TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="Archi02_TD" min="0" max="20"><br>
-        EMD1:<input type="number" id="Archi02_EMD1" min="0" max="20"><br>
-        EMD2:<input type="number" id="Archi02_EMD2" min="0" max="20"><br><br>
+          <div class="col-sm">
+              <label for="Archi02">Archi02:</label><br>
+              TD:&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="Archi02_TD" min="0" max="20"><br>
+              EMD1:<input type="number" id="Archi02_EMD1" min="0" max="20"><br>
+              EMD2:<input type="number" id="Archi02_EMD2" min="0" max=="20"><br><br>
+          </div>
 
-        <!-- SFSD -->
-        <label for="SFSD">SFSD:</label><br>
-        TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="SFSD_TD" min="0" max="20"><br>
-        EMD1:<input type="number" id="SFSD_EMD1" min="0" max="20"><br>
-        EMD2:<input type="number" id="SFSD_EMD2" min="0" max="20"><br><br>
-
-        <!-- Electronique -->
-        <label for="Electronique">Electronique:</label><br>
-        TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="Electronique_TD" min="0" max="20"><br>
-        EMD1:<input type="number" id="Electronique_EMD1" min="0" max="20"><br>
-        EMD2:<input type="number" id="Electronique_EMD2" min="0" max="20"><br><br>
-
-        <!-- Proba1 -->
-        <label for="Proba1">Proba1:</label><br>
-        TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="Proba1_TD" min="0" max="20"><br>
-        EMD1:<input type="number" id="Proba1_EMD1" min="0" max="20"><br>
-        EMD2:<input type="number" id="Proba1_EMD2" min="0" max="20"><br><br>
-
-        <!-- English2 -->
-        <label for="English2">English2:</label><br>
-        TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="English2_TD" min="0" max="20"><br>
-        EMD1:<input type="number"id="English2_EMD1"min="0"max="20"><br>
-        EMD2:<input type="number"id="English2_EMD2"min="0"max="20"><br>
-        
-
-<!--Economie-->
-<label for="Economie">Economie:</label><br>
-TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"id="Economie_TD"min="0"max="20"><br>
-EMD1:<input type="number"id="Economie_EMD1"min="0"max="20"><br>
-EMD2:<input type="number"id="Economie_EMD2"min="0"max="20"><br><br>
-
-<!--analyse3-->
-<label for="analyse3">analyse3:</label><br>
-TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"id="analyse3_TD"min="0"max=="20"><br>
-EMD1:<input type="number"id="analyse3_EMD1"min="0"max="20"><br>
-EMD2:<input type="number"id="analyse3_EMD2"min="0"max="20"><br><br>
-
-<!--algèbre3-->
-<label for="algèbre3">algèbre3:</label><br>
-TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"id="algèbre3_TD"min="0"max="20"><br>
-EMD1:<input type="number"id="algèbre3_EMD1"min="0"max="20"><br>
-EMD2:<input type="number"id="algèbre3_EMD2"min="0"max="20"><br><br>
-
-<button onclick="calculateAverage()">Calculate Average</button> 
-<p id="result"></p>  
-            </div>
+          <!-- SFSD -->
+          <div class="col-sm">
+              <label for="SFSD">SFSD:</label><br>
+              TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="SFSD_TD" min="0" max="20"><br>
+              EMD1:<input type="number"id="SFSD_EMD1"min="0"max="20"><br>
+              EMD2:<input type="number"id="SFSD_EMD2"min="0"max="20"><br><br>
+          </div>
         </div>
 
+         <!-- Electronique -->
+         <div class="row">
+          <div class="col-sm">
+              <label for="Electronique">Electronique:</label><br>
+              TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="Electronique_TD" min="0" max=="20"><br>
+              EMD1:<input type="number"id="Electronique_EMD1"min="0"max="20"><br>
+              EMD2:<input type="number"id="Electronique_EMD2"min="0"max="20"><br><br>
+          </div>
 
-</div>
+          <!-- Proba1 -->
+          <div class="col-sm">
+              <label for="Proba1">Proba1:</label><br>
+              TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"id="Proba1_TD"min="0"max="20"><br>
+              EMD1:<input type="number"id="Proba1_EMD1"min="0"max="20"><br>
+              EMD2:<input type="number"id="Proba1_EMD2"min="0"max="20">
+          </div>
+         </div>
+
+         <!-- English2 -->
+         <div class="row">
+          <div class="col-sm">
+              <label for="English2">English2:</label><br>
+              TD:     <input type="number" id="English2_TD" min="0" max="20"><br>
+              EMD1:<input type="number" id="English2_EMD1" min="0" max="20"><br>
+              EMD2:<input type="number" id="English2_EMD2" min="0" max="20"><br><br>
+              </div>
+              
+              <!-- Economie -->
+              <div class="col-sm">
+              <label for="Economie">Economie:</label><br>
+              TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="Economie_TD" min="0" max="20"><br>
+              EMD1:<input type="number" id="Economie_EMD1" min="0" max="20"><br>
+              EMD2:<input type="number" id="Economie_EMD2" min="0" max="20"><br><br>
+              </div>
+              </div>
+              
+              <!-- analyse3 -->
+              <div class="row">
+              <div class="col-sm">
+              <label for="analyse3">analyse3:</label><br>
+              TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"id="analyse3_TD"min="0"max="20"><br>
+              EMD1:<input type="number"id="analyse3_EMD1"min="0"max="20"><br>
+              EMD2:<input type="number"id="analyse3_EMD2"min="0"max="20"><br><br>
+              </div>
+              
+              <!-- algèbre3 -->
+              <div class="col-sm">
+              <label for="algèbre3">algèbre3:</label><br>
+              TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"id="algèbre3_TD"min="0"max="20"><br>
+              EMD1:<input type="number"id="algèbre3_EMD1"min="0"max="20"><br>
+              EMD2:<input type="number"id="algèbre3_EMD2"min="0"max="20"><br>
+              </div>
+              </div>
+              
+              <div class="center"> 
+              <button onclick="calculateAverage()">Calculate Average</button> 
+              </div> 
+              <p id="result"></p> 
+              </div>
+
 
 <script> 
 function calculateAverage() { 
