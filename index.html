@@ -2,48 +2,52 @@
 <html>
 <head>
     <title>Semester Average Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-        }
-        .container {
-            max-width: 600px;
-            padding: 16px;
-            background-color: #fff;
-            margin: 0 auto;
-            margin-top: 50px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-        }
-        h2 {
-            color: #007bff;
-        }
-        label {
-            color: #333;
-        }
-        input[type="number"] {
-            width: 100%;
-            margin-bottom: 10px;
-        }
-        button {
-            background-color: #007bff;
-            color: #fff;
-            border-radius: 4px;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* light grey */
+}
+.container {
+    max-width: 600px;
+    padding: 16px;
+    background-color: #fff; /* white */
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* light grey */
+}
+h2 {
+    color: #007bff; /* blue */
+}
+label {
+    color: #333; /* dark grey */
+}
+input[type="number"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+button {
+    background-color: #007bff; /* blue */
+    color: #fff; /* white */
+    border-radius: 4px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3; /* darker blue */
+}
+
     </style>
 </head>
 <body>
     <div class="container">
-        <h2>Semester Average Calculator</h2>
-
-        <!-- Archi02 -->
+        
+        <div class="row">
+            <div class="col-sm">
+                <h2>Semester Average Calculator</h2>        
+                       <!-- Archi02 -->
         <label for="Archi02">Archi02:</label><br>
         TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="Archi02_TD" min="0" max="20"><br>
         EMD1:<input type="number" id="Archi02_EMD1" min="0" max="20"><br>
@@ -93,7 +97,11 @@ EMD1:<input type="number"id="algèbre3_EMD1"min="0"max="20"><br>
 EMD2:<input type="number"id="algèbre3_EMD2"min="0"max="20"><br><br>
 
 <button onclick="calculateAverage()">Calculate Average</button> 
-<p id="result"></p> 
+<p id="result"></p>  
+            </div>
+        </div>
+
+
 </div>
 
 <script> 
