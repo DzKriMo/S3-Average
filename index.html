@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Semester Average Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 600px;
+            padding: 16px;
+            background-color: #fff;
+            margin: 0 auto;
+            margin-top: 50px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        h2 {
+            color: #007bff;
+        }
+        label {
+            color: #333;
+        }
+        input[type="number"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Semester Average Calculator</h2>
+
+        <!-- Archi02 -->
+        <label for="Archi02">Archi02:</label><br>
+        TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="Archi02_TD" min="0" max="20"><br>
+        EMD1:<input type="number" id="Archi02_EMD1" min="0" max="20"><br>
+        EMD2:<input type="number" id="Archi02_EMD2" min="0" max="20"><br><br>
+
+        <!-- SFSD -->
+        <label for="SFSD">SFSD:</label><br>
+        TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="SFSD_TD" min="0" max="20"><br>
+        EMD1:<input type="number" id="SFSD_EMD1" min="0" max="20"><br>
+        EMD2:<input type="number" id="SFSD_EMD2" min="0" max="20"><br><br>
+
+        <!-- Electronique -->
+        <label for="Electronique">Electronique:</label><br>
+        TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="Electronique_TD" min="0" max="20"><br>
+        EMD1:<input type="number" id="Electronique_EMD1" min="0" max="20"><br>
+        EMD2:<input type="number" id="Electronique_EMD2" min="0" max="20"><br><br>
+
+        <!-- Proba1 -->
+        <label for="Proba1">Proba1:</label><br>
+        TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="Proba1_TD" min="0" max="20"><br>
+        EMD1:<input type="number" id="Proba1_EMD1" min="0" max="20"><br>
+        EMD2:<input type="number" id="Proba1_EMD2" min="0" max="20"><br><br>
+
+        <!-- English2 -->
+        <label for="English2">English2:</label><br>
+        TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="English2_TD" min="0" max="20"><br>
+        EMD1:<input type="number"id="English2_EMD1"min="0"max="20"><br>
+        EMD2:<input type="number"id="English2_EMD2"min="0"max="20"><br>
+        
+
+<!--Economie-->
+<label for="Economie">Economie:</label><br>
+TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"id="Economie_TD"min="0"max="20"><br>
+EMD1:<input type="number"id="Economie_EMD1"min="0"max="20"><br>
+EMD2:<input type="number"id="Economie_EMD2"min="0"max="20"><br><br>
+
+<!--analyse3-->
+<label for="analyse3">analyse3:</label><br>
+TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"id="analyse3_TD"min="0"max=="20"><br>
+EMD1:<input type="number"id="analyse3_EMD1"min="0"max="20"><br>
+EMD2:<input type="number"id="analyse3_EMD2"min="0"max="20"><br><br>
+
+<!--algèbre3-->
+<label for="algèbre3">algèbre3:</label><br>
+TD:&nbsp;&nbsp;&nbsp;&nbsp; <input type="number"id="algèbre3_TD"min="0"max="20"><br>
+EMD1:<input type="number"id="algèbre3_EMD1"min="0"max="20"><br>
+EMD2:<input type="number"id="algèbre3_EMD2"min="0"max="20"><br><br>
+
+<button onclick="calculateAverage()">Calculate Average</button> 
+<p id="result"></p> 
+</div>
+
+<script> 
+function calculateAverage() { 
+var Archi02_TD = document.getElementById('Archi02_TD').value; 
+var Archi02_EMD1 = document.getElementById('Archi02_EMD1').value; 
+var Archi02_EMD2 = document.getElementById('Archi02_EMD2').value; 
+var Archi02 = (parseFloat(Archi02_TD) + parseFloat(Archi02_EMD1) + parseFloat(Archi02_EMD2)) / 3;
+
+var SFSD_TD = document.getElementById('SFSD_TD').value; 
+var SFSD_EMD1 = document.getElementById('SFSD_EMD1').value; 
+var SFSD_EMD2 = document.getElementById('SFSD_EMD2').value; 
+var SFSD = (parseFloat(SFSD_TD) + parseFloat(SFSD_EMD1) + parseFloat(SFSD_EMD2)) / 3;
+
+var Electronique_TD = document.getElementById('Electronique_TD').value; 
+var Electronique_EMD1 = document.getElementById('Electronique_EMD1').value; 
+var Electronique_EMD2 = document.getElementById('Electronique_EMD2').value; 
+var Electronique = (parseFloat(Electronique_TD) + parseFloat(Electronique_EMD1) + parseFloat(Electronique_EMD2)) / 3;
+
+var Proba1_TD = document.getElementById('Proba1_TD').value; 
+var Proba1_EMD1 = document.getElementById('Proba1_EMD1').value; 
+var Proba1_EMD2 = document.getElementById('Proba1_EMD2').value; 
+var Proba1 = (parseFloat(Proba1_TD) + parseFloat(Proba1_EMD1) + parseFloat(Proba1_EMD2)) / 3;
+
+var English2_TD = document.getElementById('English2_TD').value; 
+var English2_EMD1 = document.getElementById('English2_EMD1').value; 
+var English2_EMD2 = document.getElementById('English2_EMD2').value; 
+var English2 = (parseFloat(English2_TD) + parseFloat(English2_EMD1) + parseFloat(English2_EMD2)) / 3;
+
+var Economie_TD = document.getElementById('Economie_TD').value; 
+var Economie_EMD1 = document.getElementById('Economie_EMD1').value; 
+var Economie_EMD2 = document.getElementById('Economie_EMD2').value; 
+var Economie = (parseFloat(Economie_TD) + parseFloat(Economie_EMD1) + parseFloat(Economie_EMD2)) / 3;
+
+var analyse3_TD = document.getElementById('analyse3_TD').value; 
+var analyse3_EMD1 = document.getElementById('analyse3_EMD1').value; 
+var analyse3_EMD2 = document.getElementById('analyse3_EMD2').value; 
+var analyse3 = (parseFloat(analyse3_TD) + parseFloat(analyse3_EMD1) + parseFloat(analyse3_EMD2)) / 3;
+
+var algèbre3_TD = document.getElementById('algèbre3_TD').value; 
+var algèbre3_EMD1 = document.getElementById('algèbre3_EMD1').value; 
+var algèbre3_EMD2 = document.getElementById('algèbre3_EMD2').value; 
+var algèbre3 = (parseFloat(algèbre3_TD) + parseFloat(algèbre3_EMD1) + parseFloat(algèbre3_EMD2)) / 3;
+document.getElementById("result").innerHTML =
+"Semester Average: " +
+((4 * Archi02 +
+4 * SFSD +
+4 * Electronique +
+4 * Proba1 +
+2 * English2 +
+2 * Economie +
+5 * analyse3 +
+3 * algèbre3) /
+(4 + 4 + 4 + 4 + 2 + 2 + 5 + 3)).toFixed(2);
+}
+</script>
+</body>
+</html>
